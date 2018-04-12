@@ -1,0 +1,17 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: config-server-eureka
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shenzhanwei/jeesite-springclould.git
+          search-paths: config-repo
+          username: 
+          password: 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

@@ -1,0 +1,20 @@
+profile: aaa
+spring:
+  application:
+    name: microservice-provider-user    # \u9879\u76ee\u540d\u79f0\u5c3d\u91cf\u7528\u5c0f\u5199
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:                           # \u6307\u5b9a\u6570\u636e\u6e90
+    platform: h2                        # \u6307\u5b9a\u6570\u636e\u6e90\u7c7b\u578b
+    schema: classpath:schema.sql        # \u6307\u5b9ah2\u6570\u636e\u5e93\u7684\u5efa\u8868\u811a\u672c
+    data: classpath:data.sql            # \u6307\u5b9ah2\u6570\u636e\u5e93\u7684insert\u811a\u672c
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.itmuch.youran.persistence: ERROR

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.zw.cloud</groupId>
@@ -9,20 +8,8 @@
 
   <modules>
     <module>discovery-eureka</module>
-    <module>microservice-provider-user</module>
-    <module>microservice-consumer-movie-ribbon</module>
-    <module>microservice-consumer-movie-feign</module>
-    <module>microservice-consumer-movie-ribbon-with-hystrix</module>
-    <module>microservice-consumer-movie-feign-with-hystrix</module>
-    <module>microservice-hystrix-dashboard</module>
-    <module>microservice-consumer-movie-feign-with-hystrix-stream</module>
-    <module>microservice-hystrix-turbine</module>
-    <module>microservice-config-server</module>
-    <module>microservice-config-client</module>
-    <module>microservice-config-server-eureka</module>
-    <module>microservice-config-client-eureka</module>
-    <module>microservice-api-gateway</module>
-    <module>discovery-eureka</module>
+	<module></module><module>config-server-eureka</module>
+  	<module>user-management</module>
   </modules>
 
   <!-- 使用最新的spring-boot版本 -->
